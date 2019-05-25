@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SignUp</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+</head>
+
+<body>
+    <div class="container-fluid">
+            <% include ./commons/nav %> 
+        <div class="row">
+            <div class="col-md-8">
+                <form action="./signup" method="POST" enctype="multipart/form-data">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Name" name="name">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email" name="email">
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Username" name="username">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Password" name="password">
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="form-control" placeholder="Confirm Password"
+                            name="confirmPassword">
+                    </div>
+                    <div class="input-group">
+                        <label>Input File</label>
+                        <input type="file" name="avatar">
+                    </div>
+                    <button class="btn btn-success" type="submit">Sign Up</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/bootstrap.min.js"></script>
+
+</html>
